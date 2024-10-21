@@ -1,0 +1,185 @@
+/* PORTPOLIO */
+body {font-family: 'LaundryGothic', sans-serif;}
+:root {
+  --main_color : #FFF7F0
+}
+.inner {height: 100vh;padding: 0 3%;border-bottom: 1px solid rgba(0, 0, 0, 0.3);}
+section h2 {font-size: 24px;font-weight: bold;}
+
+
+/* Header */
+header .inner {position: relative;}
+header .header_box {
+  position: fixed;left: 0;right: 0;height: 100px;
+  display: flex;justify-content: space-between;align-items: center;
+  z-index: 9999;background: var(--main_color);
+}
+header h1 {font-size: 20px;font-weight: 700;}
+header .nav {
+  display: flex;gap: 50px;font-size: 18px;
+  font-weight: 700;
+}
+
+/* Main */
+.main_visual {
+  position: relative;overflow: hidden;
+  width: 100%;height: 100vh;
+  display: flex;flex-direction: column;
+  justify-content: center;gap: 50px;
+  background: var(--main_color);text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.main_visual .main_visual_txt {
+  position: absolute;width: 100%;
+  opacity: 0;animation: fade 6s infinite;
+  top: 40%;left: 40%;
+  transform: translate(-40%, -40%);
+}
+.main_visual .main_visual_txt:nth-child(1) {
+  animation-delay: 0s;
+}
+.main_visual .main_visual_txt:nth-child(2) {
+  animation-delay: 3s;
+}
+@keyframes fade {
+  0%, 50% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.main_visual strong {font-size: 100px;}
+.main_visual .main_visual_name {
+  position: absolute;top: 60%;left: 50%;
+  transform: translate(-60%, -50%);
+  display: flex;flex-direction: column;gap: 15px;
+  align-items: center;
+}
+.main_visual span {
+  font-size: 22px;font-weight: bold;
+  color: gray;
+}
+.main_visual span:last-child {
+  font-size: 16px;font-weight: bold;
+  color: rgba(0, 0, 0, 0.4)
+}
+
+
+/* About */
+.about {background: var(--main_color);}
+.about .inner {position: relative;}
+.about h2 {
+  position: absolute;left: 3%;top: 5%;
+  transform: translate(-3%, -5%);
+}
+.about .about_content {
+  display: flex;gap: 100px;justify-content: center;
+  align-items: center;
+}
+.about .aboutme {
+  display: flex;gap: 90px;
+}
+.about .about_content .img_box {
+  width: 270px;height: 360px;
+}
+.about .img_box img {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 10px;box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+.about .about_txt {
+  display: flex;flex-direction: column;
+  justify-content: space-around;
+}
+.work_experience {
+  display: flex;flex-direction: column;gap: 20px;
+}
+.work_experience strong {font-weight: 700;}
+.work_experience .work_txt {
+  display: flex;flex-direction: column;gap: 15px;
+}
+.education {display: flex;flex-direction: column;gap: 20px;}
+.education strong {font-weight: 700;}
+.education .education_txt {
+  display: flex;flex-direction: column;gap: 15px;
+}
+
+/* Skills */
+.skills {background: var(--main_color);}
+.skills .inner {position: relative;}
+.skills .skill_content {
+  display: flex;flex-direction: column;
+  align-items: center;justify-content: center;
+}
+.skills .skills_content h2 {
+  position: absolute;left: 3%;top: 5%;
+  transform: translate(-3%, -5%);
+}
+.skills .skills_box {
+  display: flex;flex-wrap: wrap;
+  justify-content: center;align-items: center;
+  padding: 5% 10%;
+}
+.skills .skill {
+  display: flex;flex-wrap: wrap;gap: 10px;
+  flex-direction: column;align-items: center;gap: 30px;
+  width: 300px;height: 300px;position: relative;
+  border-radius: 50%;transition: 0.3s;
+}
+.skill_txt_box {
+  background: var(--main_color);
+  display : block;text-align:center;
+  position: absolute;top:50%; left:50%;
+  transform: translate(-50%, -50%);
+  width: 150px;height: 150px;border-radius: 50%;
+}
+.skills .skill_txt {
+  display: flex;justify-content: center;
+  align-items: center;text-align: center;
+  position: absolute;top:50%; left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Project */
+.project {background: var(--main_color);}
+.project .inner {position: relative;}
+.project .project_content h2 {
+  position: absolute;left: 3%;top: 5%;
+  transform: translate(-3%, -5%);
+}
+.swiper-wrapper {display: flex;}
+.project .swiper-slide {
+  height: 100vh;
+  display: flex;justify-content: center;align-items: center;
+  gap: 130px;
+}
+.project .project_box {
+  display: flex;flex-direction: column;gap: 100px;
+}
+.project .poject_title {
+  display: flex;flex-direction: column;gap: 20px;
+}
+.project .poject_title strong {
+  font-size: 40px;
+}
+.project .poject_title span {
+  font-size: 24px;color: rgba(0, 0, 0, 0.5);
+}
+.project .project_txt_box {
+  display: flex;flex-direction: column;align-items: start;
+  gap: 20px;
+}
+.project .project_txt {font-size: 18px;}
+.project .project_skill {font-size: 15px;color: rgba(0, 0, 0, 0.6);}
+.project button {
+  width: 200px;height: 55px;
+  font-size: 24px;background: #B74242;color: #fff;
+  border-radius: 15px;box-shadow: 6px 6px 3px #5C2525;
+}
+.project .project_img_box img {
+  width: 760px;height: 760px;
+}
+
+

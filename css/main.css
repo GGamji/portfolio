@@ -149,6 +149,7 @@ header .nav {
   position: absolute;left: 3%;top: 5%;
   transform: translate(-3%, -5%);
 }
+.project-swiper {overflow: hidden;}
 .swiper-wrapper {display: flex;}
 .project .swiper-slide {
   height: 100vh;

@@ -1,4 +1,5 @@
 
+
 // main_visual
 const mainSwiper = new Swiper('.main_visual .txt-swiper', {
   effect: 'fade',
@@ -8,24 +9,12 @@ const mainSwiper = new Swiper('.main_visual .txt-swiper', {
 })
 
 
-// project-swiper
-const projectSwiper = new Swiper('.project-swiper', {
-  autoplay: {
-    delay: 3000,
-  },
-  // loop: true,
-  navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-  }
-})
-
 
 // About
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".img_box", {
-  scale: 1.3,
+  scale: 1.2,
   scrollTrigger: {
     trigger: ".img_box",
     start: "top 90%",
@@ -35,6 +24,7 @@ gsap.to(".img_box", {
     // pin: true,
   },
 });
+
 
 
 // Skill
@@ -76,3 +66,18 @@ gsap.to(".skill_txt_box", {
     // pin: true,
   },
 });
+
+
+
+  // project-swiper
+  const projectSwiper = new Swiper('.project-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+    },
+    // loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })

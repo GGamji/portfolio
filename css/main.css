@@ -82,11 +82,16 @@ header .nav {
   display: flex;gap: 90px;
 }
 .about .about_content .img_box {
-  width: 270px;height: 360px;
+  display: flex;flex-direction: column;gap: 25px;
+  width: 240px;height: 320px;
 }
 .about .img_box img {
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 10px;box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+.about .img_box span {
+  font-size: 14px;line-height: 18px;
+  color: rgba(0, 0, 0, 0.7);
 }
 .about .about_txt {
   display: flex;flex-direction: column;
@@ -105,6 +110,7 @@ header .nav {
   display: flex;flex-direction: column;gap: 15px;
 }
 
+
 /* Skills */
 .skills {background: var(--main_color);}
 .skills .inner {position: relative;}
@@ -116,14 +122,11 @@ header .nav {
   position: absolute;left: 3%;top: 5%;
   transform: translate(-3%, -5%);
 }
-.skills .skills_box {
-  display: flex;flex-wrap: wrap;
-  justify-content: center;align-items: center;
+.skills .skills_box {border: 1px solid #000;
+  display: grid;grid-template-columns: repeat(3, 1fr);
   padding: 5% 10%;
 }
-.skills .skill {
-  display: flex;flex-wrap: wrap;gap: 10px;
-  flex-direction: column;align-items: center;gap: 30px;
+.skills .skill {border: 1px solid red;
   width: 300px;height: 300px;position: relative;
   border-radius: 50%;transition: 0.3s;
 }
@@ -134,7 +137,7 @@ header .nav {
   transform: translate(-50%, -50%);
   width: 150px;height: 150px;border-radius: 50%;
 }
-.skills .skill_txt {
+.skills .skill_txt {border: 1px solid green;
   display: flex;justify-content: center;
   align-items: center;text-align: center;
   position: absolute;top:50%; left:50%;
@@ -179,8 +182,9 @@ header .nav {
   font-size: 24px;background: #B74242;color: #fff;
   border-radius: 15px;box-shadow: 6px 6px 3px #5C2525;
 }
+.project .project_box button a {
+  padding: 15px 65px;border-radius: 15px;
+}
 .project .project_img_box img {
   width: 760px;height: 760px;
 }
-
-

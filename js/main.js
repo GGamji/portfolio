@@ -1,3 +1,40 @@
+// header
+// $(window).on('scroll', function() {
+//   if($(window).scrollTop() > 10) {
+//     $('.header_box').addClass('scroll')
+//   } else {
+//     $('.header_box').removeClass('scroll')
+//   }
+// })
+
+$('body').on('mousewheel', function(event) {
+
+  if(event.originalEvent.deltaY > 0) {
+    $('.header_box').addClass('scroll')
+  } else if(event.originalEvent.deltaY < 0) {
+    $('.header_box').removeClass('scroll')
+  }
+})
+
+// $(window).scroll(function() { //스크롤링이 될 때마다
+// 	if($(window).scrollTop() >= 10) {
+// 		$('header').addClass('on')
+// 	}
+// 	else {
+// 		$('header').removeClass('on')
+// 	}
+// 	// console.log($(window).scrollTop());
+// })
+
+$('.nav a').click(function(e) {
+  e.preventDefault()
+  let name = $(this).text()
+  console.log($('.' + name));
+  $('html').animate({
+    scrollTop: $('.' + name).offset().top
+  })
+
+})
 
 
 // main_visual

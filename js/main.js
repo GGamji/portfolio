@@ -8,7 +8,6 @@
 // })
 
 $('body').on('mousewheel', function(event) {
-
   if(event.originalEvent.deltaY > 0) {
     $('.header_box').addClass('scroll')
   } else if(event.originalEvent.deltaY < 0) {
@@ -102,7 +101,7 @@ ScrollTrigger.create({
     skills.forEach(skill =>
       draw(skill.max, skill.classname, skill.colorname));
   },
-  markers: true,
+  // markers: true,
   // toggleActions: "play none none reset"
 })
 

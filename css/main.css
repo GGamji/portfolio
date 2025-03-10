@@ -156,9 +156,8 @@ header .nav {
 .project-swiper {overflow: hidden;}
 .swiper-wrapper {display: flex;}
 .project .swiper-slide {
-  height: 100vh;
-  display: flex;justify-content: flex-start;align-items: center;
-  gap: 300px;padding-left: 10%;
+  height: 100vh;padding-left: 10%;
+  display: flex;justify-content: space-between;align-items: center;  
 }
 .project .project_box {
   display: flex;flex-direction: column;gap: 70px;

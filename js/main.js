@@ -40,7 +40,7 @@ $('.nav a').click(function(e) {
 const mainSwiper = new Swiper('.main_visual .txt-swiper', {
   effect: 'fade',
   autoplay: {
-    delay: 5000
+    delay: 4000
   }
 })
 
